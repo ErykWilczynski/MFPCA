@@ -1,4 +1,5 @@
 library(readxl)
+
 tabela2008 <- read_excel("j:/Desktop/R/Multivariate data analysis/tabela06_2008.06.xlsx")
 tabela2009 <- read_excel("j:/Desktop/R/Multivariate data analysis/tabela06_2009.06.xlsx")
 tabela2010 <- read_excel("j:/Desktop/R/Multivariate data analysis/tabela06_2010.06.xlsx")
