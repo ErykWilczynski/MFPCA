@@ -1,3 +1,15 @@
+library(readxl)
+Zanieczyszczenia_2016 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2016.xlsx")
+Zanieczyszczenia_2015 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2015.xlsx")
+Zanieczyszczenia_2014 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2014.xlsx")
+Zanieczyszczenia_2013 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2013.xlsx")
+Zanieczyszczenia_2012 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2012.xlsx")
+Zanieczyszczenia_2011 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2011.xlsx")
+Zanieczyszczenia_2010 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2010.xlsx")
+Zanieczyszczenia_2009 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2009.xlsx")
+Zanieczyszczenia_2008 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2008.xlsx")
+Zanieczyszczenia_2007 <- read_excel("j:/Desktop/Dane/Zanieczyszczenia_2007.xlsx")
+
 t2016 <- Zanieczyszczenia_2016[c(2,8,14,19,22,28,35,44,47,52,56,62,72,75,79,86),-c(1,3,4,5,6,7,8)]
 t2015 <- Zanieczyszczenia_2015[-c(1,3,4,5,6,7,8)]
 t2014 <- Zanieczyszczenia_2014[-c(1,3,4,5,6,7,8)]
@@ -9,46 +21,46 @@ t2009 <- Zanieczyszczenia_2009[-c(1,3,4,5,6)]
 t2008 <- Zanieczyszczenia_2008[-c(1,3,4,5,6)]
 t2007 <- Zanieczyszczenia_2007[-c(1,3,4,5,6)]
 
-rownames(t2016) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2015) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2014) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2013) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2012) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2011) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2010) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2009) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2008) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                             ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                             'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                             'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
-rownames(t2007) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                     ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                     'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                     'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2016) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2015) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2014) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2013) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2012) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2011) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2010) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2009) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2008) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                             ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                             'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                             'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+rownames(t2007) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                     ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                     'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                     'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
 
 model <- prcomp(t2007)
 summary(model)
@@ -305,10 +317,10 @@ colnames(c) <- c('100work.Dolnosl.', '100work.Kuj-pom','100work.Lubel',
 
 
 View(X)
-colnames(X) <- c('Dolnoœl¹skie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
-                 ,'£ódzkie','Ma³opolskie','Mazowieckie','Opolskie','Podkarpackie',
-                 'Podlaskie','Pomorskie','Œl¹skie','Œwiêtokrzyskie',
-                 'Warmiñsko-mazurskie','Wielkopolskie','Zachodniopomorskie')
+colnames(X) <- c('Dolnoî¯“é›¶kie','Kujawsko-pomorskie','Lubelskie','Lubuskie'
+                 ,'ï¿½dzkie','Maé€™polskie','Mazowieckie','Opolskie','Podkarpackie',
+                 'Podlaskie','Pomorskie','ï–£é›¶kie','ï–®içš»okrzyskie',
+                 'Warmié›Ÿko-mazurskie','Wielkopolskie','Zachodniopomorskie')
 
 
 library(Funclustering)
@@ -353,7 +365,7 @@ fdb <- Data2fd(b, argvals=CWtime, basisobj=CWbasis)
 fdc <- Data2fd(c, argvals=CWtime, basisobj=CWbasis)
 
 pca[[1]]$varprop
-plotfd(fdc, main = 'Nak³ady s³u¿¹ce gospodarce wodnej')
+plotfd(fdc, main = 'Nakè±‰dy sé€è•¨ce gospodarce wodnej')
 
 
 plot(pca[[1]]$scores, xlab = 'MFPC1 (39,28%)',ylab = 'MFPC2 (25,79%)', cex = 2.5)
